@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    margin-top: 0;
+  }
+
+main{
+    background-color: #404040;
+    color:white;
+}
+
+.wrapper{
+    margin:100px;
+    height: 100vh;
+    margin-top:0px;
+    padding-top:100px;
+}
