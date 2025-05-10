@@ -20,7 +20,15 @@ main{
 
 .wrapper{
     margin:100px;
-    height: 100vh;
+    height: fit-content;
     margin-top:0px;
     padding-top:100px;
+}
+
+.card{
+  width: 80%;
+}
+
+.col-md-4{
+  margin:auto
 }
