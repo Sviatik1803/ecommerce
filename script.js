@@ -46,18 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
           title: card.querySelector(".card-title").innerText,
           imgSrc: card.querySelector(".card-img").getAttribute("src"),
           desc: card.querySelector('.card-sub').innerText,
-          price: +card.querySelector('.price').innerText
+          price: +card.querySelector('.price').innerText,
+          id: card.querySelector('.id').innerText
       }
 
-      // console.log(JSON.stringify(product_info))
-
-      // localStorage.setItem("card", JSON.stringify(product_info));
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-      // Додаємо новий товар до масиву
       cart.push(product_info);
-  
-      // Зберігаємо оновлений кошик у localStorage
-      localStorage.setItem("cart", JSON.stringify(cart));    }
+      localStorage.setItem("cart", JSON.stringify(cart));   
+     }
   });
 });
