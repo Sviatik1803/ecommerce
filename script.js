@@ -28,7 +28,6 @@ function goToCart(){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  let cart_counter = document.querySelector(".cart-counter");
   cart_counter.innerHTML = localStorage.getItem("count") || 0;
 
   let counter = +localStorage.getItem("count") || 0;
